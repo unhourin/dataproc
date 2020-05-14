@@ -1,0 +1,43 @@
+Atumori 環境構築
+Atumori環境を構築するためのマニュアルです。
+最終更新日 :  2020-04-21
+
+動作環境
+OS
+* Windows 10（64bit）
+Software
+* Eclipse 2020-3
+* MySQL
+* Java 8 JDK(version 1.8.0.251)
+* Tomcat (version 7.0.103)
+
+プロジェクト構築手順
+Atumori を動作させるためには、上記の環境を構築する必要があります。ここでは、以下の手順で環境を構築します。
+
+1. Java 8 JDK をインストール
+2. MySQLをインストール
+3. Tomcatをインストール
+4. Eclipse をインストール
+5. 環境設定
+
+1. Java 8 JDK をインストール
+　　　Java 8 JDK をインストールします。
+1-1 
+    サイトからダウンロードします。
+    https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+
+
+
+
+
+
+
+
+
+1-2 
+    ダウンロードした jdk-8uXX-windows-x64.exe をダブルクリックして起動して「次へ」を選択して「終了」まで進みます。
+1-3
+    Java で動作するアプリケーションには、Windows の環境変数を頼りに動作するアプリケーションもありますので、Java のインストールディレクトリを表す環境変数「JAVA_HOME」を Windows の環境変数として追加しておきます。
+　　　「コントロールパネル」→「システム」→「システムの詳細設定」→「環境変数」とたどって、下図のように環境変数を設定します。
+　　 「ユーザー環境変数」の「変数」に「JAVA_HOME」がまだ無いことを確認したら「新規」ボタンをクリックして変数名に「JAVA_HOME」、値に先ほど JDK をインストールした Java のディレクトリを入力します。 下図のように「C:￥Program Files￥Java￥jdk1.8.0_60」などになると思います。 念のためエクスプローラで該当のフォルダを確認し、パスをコピーして貼り付けた方が安全でしょう。
+
